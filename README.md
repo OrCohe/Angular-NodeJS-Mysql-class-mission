@@ -1,2 +1,2 @@
-# Angular-NodeJS-Mysql-class-mission
-Members and Tasks Managment
+# Angular-Node-Mysql-class-misstion
+# Angular-Node-Mysql-class-misstion

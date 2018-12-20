@@ -1,0 +1,19 @@
+li {
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+button {
+    margin: 10px;
+}
+
+#container {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#errMsg {
+    color: red;
+}

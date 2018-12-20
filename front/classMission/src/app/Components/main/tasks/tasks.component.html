@@ -1,0 +1,19 @@
+<div id="container">
+    <ul *ngIf="gotTasks">
+        <div *ngFor='let task of tasks'>
+            <li>ID: {{task.id}}, Des: {{task.description}}, Date: {{task.date}}, By: {{task.name}}</li>
+            <button (click)="deleteTask(task.id)">Delete</button>
+        </div>
+        
+      </ul>
+      <button (click)="openTaskInput()">Add New Task</button>
+      <div *ngIf="taskInput">
+          <input #description placeholder="Task description">
+          <input #date type="date">
+          <select #personId>
+              <option [value]="member.id" *ngFor="let member of members">{{member.name}}</option>
+            </select> <br/>
+          <button (click)="addTask(description.value, date.value, personId.value)">Add Task!</button>
+          <p id="errMsg" *ngIf="errorMsg">{{errorMsg}}</p>
+      </div>
+</div>

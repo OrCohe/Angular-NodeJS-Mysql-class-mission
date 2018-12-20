@@ -1,0 +1,18 @@
+<div id="container">
+  <ul *ngIf="gotMembers">
+    <div *ngFor='let member of members'>
+      <li>ID: {{member.id}}, Name: {{member.name}}, Nickname: {{member.nickname}}, Role: {{member.role}}</li>
+      <button (click)="deleteMember(member.id)">Delete</button>
+    </div>
+  </ul>
+  <button (click)="openTaskInput()">Add new Member</button>
+  <div *ngIf="memberInput">
+    <input #name placeholder="Member Name">
+    <input #nickname placeholder="Member Nickname">
+    <input #role placeholder="Member Role"> <br/>
+    <button (click)="addMember(name.value, nickname.value, role.value)">Add Member!</button>
+    <p id="errMsg" *ngIf="errorMsg">{{errorMsg}}</p>
+  </div>
+</div>
+
+

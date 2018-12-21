@@ -12,9 +12,7 @@ import { MemberLinePipe } from './Shared/Pipes/MemberLine/member-line.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    TaskLinePipe,
-    MemberLinePipe
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +21,6 @@ import { MemberLinePipe } from './Shared/Pipes/MemberLine/member-line.pipe';
     MainModule
   ],
   exports: [
-    TaskLinePipe,
-    MemberLinePipe
   ],
   providers: [],
   bootstrap: [AppComponent]

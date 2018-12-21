@@ -1,7 +1,7 @@
 <div id="container">
     <ul *ngIf="gotTasks">
         <div *ngFor='let task of tasks'>
-            <li>ID: {{task.id}}, Des: {{task.description}}, Date: {{task.date}}, By: {{task.name}}</li>
+            <li>{{task | taskLine}}</li>
             <button (click)="deleteTask(task.id)">Delete</button>
         </div>
         

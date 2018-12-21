@@ -1,0 +1,17 @@
+#container {
+    background-color: #1B242F;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+}
+h1 {
+    margin: 0;
+    color: white;
+    border-bottom: 1px solid #04C2C9;
+    margin-bottom: 20px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #04C2C9;
+}

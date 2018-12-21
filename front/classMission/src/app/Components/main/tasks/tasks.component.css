@@ -1,6 +1,8 @@
 li {
     display: inline-block;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #04C2C9;
+    padding-top: 10px;
+    color: white;
 }
 
 button {
@@ -12,6 +14,8 @@ button {
     align-items: center;
     text-align: center;
     width: 100%;
+    background-color: #252934;
+    height: 80vh;
 }
 
 #errMsg {

@@ -1,7 +1,7 @@
 <div id="container">
   <ul *ngIf="gotMembers">
     <div *ngFor='let member of members'>
-      <li>ID: {{member.id}}, Name: {{member.name}}, Nickname: {{member.nickname}}, Role: {{member.role}}</li>
+      <li>{{member | memberLine}}</li>
       <button (click)="deleteMember(member.id)">Delete</button>
     </div>
   </ul>
